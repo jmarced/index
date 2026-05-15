@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akelarre - Inicio</title>
+    <style>
+        body{font-family:Arial,sans-serif;background:#1a0f1a;color:#f0e0d8;line-height:1.6;margin:0;padding:20px}
+      
+  header{background:#2d1b2d;padding:20px;text-align:center;box-shadow:0 4px 15px #000}
+        header img{max-width:220px;height:auto;border-radius:12px}
+        nav{background:#3a233a;padding:15px;text-align:center}
+        nav a{color:#d4af37;text-decoration:none;padding:12px 25px;margin:0 10px;border:2px solid #d4af37;border-radius:25px;font-weight:bold;transition:all 0.3s}
+        nav a:hover{background:#d4af37;color:#1a0f1a}
+
+        .hero{text-align:center;padding:60px 20px;background:linear-gradient(135deg,#2d1b2d,#4a0f4a)}        .hero h1{font-size:3rem;color:#d4af37;text-shadow:2px 2px 8px #000;margin-bottom:20px}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;max-width:1200px;margin:40px auto}
+        .card{background:#2d1b2d;padding:25px;border-radius:15px;border:1px solid #503150;text-align:center;transition:transform 0.3s}
+        .card:hover{transform:translateY(-10px);border-color:#d4af37}
+        .card img{max-width:100%;height:200px;object-fit:cover;border-radius:10px;margin-bottom:15px}
+        footer{background:#0f080f;color:#aaa;text-align:center;padding:25px;margin-top:40px}
+        @media(max-width:768px){.hero h1{font-size:2rem}.nav a{display:block;margin:5px 0}}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo dos.png" alt="Akelarre Logo">
+        <h1>Restaurante Akelarre</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="contacto.html"> Contacto</a>
+    </nav>
+    <section class="hero">
+        <h1>Bienvenido a Akelarre</h1>
+        <p>Cocina oaxaqueña tradicional.</p>
+    </section>
+    <div class="grid">
+        <div class="card">
+            
+            <img src="mole negro.png" alt="Mole Negro">
+            <h3>Mole Negro Oaxaqueño</h3>
+            <p>Clásico de 7 chiles con chocolate y guajolote. Plato insignia.</p>
+        </div>
+        <div class="card">
+            
+            <img src="tlayuda.png" alt="Tlayudas">
+            <h3>Tlayudas</h3>
+            <p>Tortilla crujiente con tasajo, quesillo y salsa de asiento.</p>
+        </div>
+        <div class="card">
+           
+            <img src="mezcal.png" alt="Mezcal">
+            <h3>Degustación Mezcal</h3>
+            <p>5 mezcales artesanales de la región. Pairing perfecto.</p>
+        </div>
+    </div>
+    <footer>
+        <p>📍 Avenida ermita #33, Huajuapan de León, Oaxaca |  Mar-Dom 9:00-22:00</p>
+        <p>&copy;  Akelarre</p>
+    </footer>
+</body>
+</html>

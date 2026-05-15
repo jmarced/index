@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akelarre - Menú</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Georgia', serif; 
+            background: linear-gradient(135deg, #1a0f1a 0%, #2d1b2d 100%); 
+            color: #f0e0d8; 
+            line-height: 1.6; 
+            padding: 20px;
+        }
+        header { 
+            background: rgba(45,27,45,0.95); 
+            padding: 25px; 
+            text-align: center; 
+            border-radius: 20px; 
+            box-shadow: 0 8px 30px rgba(0,0,0,0.8);
+            margin-bottom: 20px;
+        }
+        header img { 
+            max-width: 220px; 
+            height: auto; 
+            border-radius: 15px; 
+            box-shadow: 0 5px 20px rgba(212,175,55,0.4);
+            margin-bottom: 15px;
+        }
+        header h1 { 
+            color: #d4af37; 
+            font-size: 2.8rem; 
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.9);
+        }
+        nav { 
+            background: rgba(62,35,62,0.9); 
+            padding: 18px; 
+            text-align: center; 
+            border-radius: 15px; 
+            margin-bottom: 30px;
+        }
+        nav a { 
+            color: #d4af37; 
+            text-decoration: none; 
+            padding: 12px 28px; 
+            margin: 0 8px; 
+            border: 2px solid #d4af37; 
+            border-radius: 30px; 
+            font-weight: bold; 
+            transition: all 0.3s;
+        }
+        nav a:hover { 
+            background: #d4af37; 
+            color: #1a0f1a; 
+            transform: scale(1.05);
+        }
+        .hero { 
+            text-align: center; 
+            padding: 50px 20px; 
+            background: rgba(74,15,74,0.6); 
+            border-radius: 20px; 
+            margin-bottom: 40px;
+        }
+        .hero h1 { 
+            color: #d4af37; 
+            font-size: 2.5rem; 
+            margin-bottom: 15px; 
+            text-shadow: 2px 2px 8px #000;
+        }
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 25px; 
+            max-width: 1200px; 
+            margin: 0 auto 40px;
+        }
+        .card { 
+            background: rgba(45,27,45,0.85); 
+            padding: 25px; 
+            border-radius: 20px; 
+            text-align: center; 
+            border: 2px solid #3a233a; 
+            transition: all 0.4s;
+            backdrop-filter: blur(10px);
+        }
+        .card:hover { 
+            border-color: #d4af37; 
+            transform: translateY(-8px); 
+            box-shadow: 0 15px 40px rgba(212,175,55,0.3);
+        }
+        .card img { 
+            width: 100%; 
+            max-height: 220px; 
+            object-fit: cover; 
+            border-radius: 15px; 
+            margin-bottom: 15px; 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+        }
+        .card h3 { 
+            color: #d4af37; 
+            font-size: 1.5rem; 
+            margin-bottom: 12px;
+        }
+        .card p strong { 
+            color: #dc2626; 
+            font-size: 1.4rem;
+        }
+        footer { 
+            background: rgba(15,8,15,0.95); 
+            color: #ccc; 
+            text-align: center; 
+            padding: 30px; 
+            border-radius: 20px; 
+            border-top: 4px solid #d4af37;
+        }
+        @media (max-width: 768px) { 
+            .grid { grid-template-columns: 1fr; gap: 20px; }
+            header h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo dos.png" alt="Akelarre Logo">
+        <h1>Menú Akelarre</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="menu.html"> Menú</a>
+        <a href="contacto.html"> Contacto</a>
+    </nav>
+    
+    <section class="hero">
+        <h1>Nuestro Menú Variado</h1>
+        <p>Platillos oaxaqueños</p>
+    </section>
+    
+    <div class="grid">
+        <div class="card">
+            <img src="mole negro.png" alt="Mole Negro">
+            <h3>Mole Negro</h3>
+            <p>7 chiles, chocolate, guajolote | <strong>$320</strong></p>
+        </div>
+        <div class="card">
+            <img src="tlayuda.png" alt="Tlayuda">
+            <h3>Tlayuda Tasajo</h3>
+            <p>Tortilla crujiente, tasajo, quesillo | <strong>$180</strong></p>
+        </div>
+        <div class="card">
+            <img src="chiles rellenos.png" alt="Chiles Rellenos">
+            <h3>Chiles Rellenos</h3>
+            <p>Chiles güero con picadillo, nuez | <strong>$240</strong></p>
+        </div>
+        <div class="card">
+            <img src="enfrijoladas.png" alt="Enfrijoladas">
+            <h3>Enfrijoladas</h3>
+            <p>Frijol negro, chorizo, huevo | <strong>$160</strong></p>
+        </div>
+        <div class="card">
+            <img src="Chapulines.png" alt="Chapulines">
+            <h3>Chapulines Guisados</h3>
+            <p>Clásico oaxaqueño con salsa de tomate | <strong>$140</strong></p>
+        </div>
+        <div class="card">
+            <img src="mezcal.png" alt="Mezcal">
+            <h3> Mezcal</h3>
+            <p>Mezcales artesanales de Oaxaca | <strong>$280</strong></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>¿Desea ordenar? Llame ahora al +52 953 277 35 71</p>
+        <p>Precios en MXN</p>
+<p>&copy;Akelarre</p>
+    </footer>
+</body>
+</html>
